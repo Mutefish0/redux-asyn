@@ -1,0 +1,25 @@
+{
+  "name": "redux-asyn",
+  "version": "1.0.0",
+  "description": "a redux middleware that support async actions for concise usage",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mutefish0/redux-asyn.git"
+  },
+  "keywords": [
+    "redux",
+    "react",
+    "redux-asyn",
+    "action"
+  ],
+  "author": "mutefish0\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[M\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mutefish0/redux-asyn/issues"
+  },
+  "homepage": "https://github.com/Mutefish0/redux-asyn#readme"
+}
