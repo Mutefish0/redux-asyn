@@ -68,7 +68,7 @@ dispatch(anAction)
 // action SOME_ASYN_ACTION dispatched 
 // console: some payload a
 // console: some payload b
-// after 1 second 
+// one second after... 
 // action ASYN_SUCCESS dispatched
 // console: asyn procedure finished
 ```
