@@ -1,3 +1,3 @@
 # redux-asyn
-[![npm version](https://img.shields.io/npm/v/redux-thunk.svg?style=flat-square)](https://www.npmjs.com/package/redux-thunk)
+[![npm](https://img.shields.io/npm/v/npm.svg?maxAge=2592000)]()
 a redux middleware that support async actions for concise usage
