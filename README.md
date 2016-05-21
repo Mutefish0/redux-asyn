@@ -36,8 +36,8 @@ export const SOME_ASYN_ACTION = {
     type : 'SOME_ASYN_ACTION',
     
     // for asyn action, 'asyn' property is  required additional
-    // asyn must be a function, which will be called by accepting a object that include `dispatch` and the extra payload 
-    // after 'SOME_ASYN_ACTION' was dispatched
+    // asyn must be a function, which will be called by accepting a object that include `dispatch` and 
+    // the extra payload  after 'SOME_ASYN_ACTION' was dispatched
     asyn :  ({dispatch,payloadA,payloadB}) => {
           //here you can access  'payloadA' and 'payloadB' 
           console.log(payloadA)
@@ -71,5 +71,4 @@ dispatch(anAction)
 // after 1 second 
 // action ASYN_SUCCESS dispatched
 // console: asyn procedure finished
-
 ```
