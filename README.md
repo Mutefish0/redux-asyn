@@ -72,3 +72,4 @@ dispatch(anAction)
 // action ASYN_SUCCESS dispatched
 // console: asyn procedure finished
 ```
+That's all. 
