@@ -23,7 +23,7 @@ const store = createStore(
 )
 ```
 
-Then,you can define an asyc action simply by including a `asyn` property in your action.  
+Then,you can define an asyc action simply by including a `asyn` property in your action:  
 ```js
 //define an normal action 
 export const ASYN_SUCCESS = {
@@ -58,7 +58,7 @@ export const SOME_ASYN_ACTION = {
 }
 ```
 
-Now, you can dispatch the asyn action anywhere.
+Now, you can dispatch the asyn action anywhere:
 ```js
 // 'payloadA' and 'payloadB' will be passed to your `asyn` function defined in your 'SOME_ASYN_ACTION'
 let anAction = {...SOME_ASYN_ACTION, payloadA : 'some payload a', payloadB : 'some payload b'} 
