@@ -4,8 +4,7 @@
 
 a redux [middleware](http://redux.js.org/docs/advanced/Middleware.html) that support async actions for concise usage
 
-# Install
-
+## Installation
 ```js
 npm install redux-asyn 
 ```
