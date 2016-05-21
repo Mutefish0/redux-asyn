@@ -14,13 +14,13 @@ npm install redux-asyn
 To enable redux-asyn, use [`applyMiddleware()`](http://redux.js.org/docs/api/applyMiddleware.html):
 ```js
 import { createStore, applyMiddleware } from 'redux'
-import asynMiddleware 'redux-asyn'
+import asynMiddleware from 'redux-asyn'
 import appReducer from './reducers/index'
 
 const store = createStore(
   appReducer,
   applyMiddleware(asynMiddleware)
-);
+)
 ```
 
 Then,you can define an asyc action simply by including a `asyn` property in your action.  
