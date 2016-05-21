@@ -1,9 +1,3 @@
-/**
- * Created by lenovo on 2016/5/17.
- */
-
-
-
 export const LOGIN_SUCCESS = { type : 'LOGIN_SUCCESS' }
 export const LOGIN_FAILED  = { type : 'LOGIN_FAILED',  info : null}
 export const LOGIN_ASYN = {
