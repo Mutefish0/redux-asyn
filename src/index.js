@@ -1,5 +1,5 @@
 /*
-* redux-asyn updated
+* redux-asyn
 * */
 
 export default function asynMiddleware(){ 
@@ -9,7 +9,10 @@ export default function asynMiddleware(){
         if(asyn) 
             {
               let promise = asyn({ dispatch : next, ...param })
-              if(promise instanceof Promise) promise.then((nextAction)=>next(nextAction))
+              if(promise instanceof Promise) promise.then((nextAction)=>{
+                    next(nextAction)
+                    return nextAction 
+                })
             }
         return action
     }
