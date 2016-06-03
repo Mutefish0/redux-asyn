@@ -72,4 +72,33 @@ dispatch(anAction)
 // action ASYN_SUCCESS dispatched
 // console: asyn procedure finished
 ```
-That's all. 
+###Support async function 
+
+```js
+export const SOME_FETCH = {
+    type   : 'SOME_FETCH',
+    asyn   : async function(/*{some optional payload pass here}*/){
+        try{
+            let response = await fetch('/')
+            let text = await response.text()
+            console.log(text)
+            return SOME_FETCH_SUCCESS
+        }
+        catch(e){
+            console.log(e.message)
+            return SOME_FETCH_FAILED
+        }
+    }
+}
+
+export const SOME_FETCH_SUCCESS = {
+    type   : 'SOME_FETCH_SUCCESS'
+}
+
+export const SOME_FETCH_FAILED = {
+    type   : 'SOME_FETCH_FAILED'
+}
+```
+
+
+That's all! 
