@@ -72,12 +72,12 @@ dispatch(anAction)
 // action ASYN_SUCCESS dispatched
 // console: asyn procedure finished
 ```
-###Support async function 
-
+##Support Async Function 
+Since v1.2.4 `asyn` can accept an (async function)[https://tc39.github.io/ecmascript-asyncawait/], after some async process finished,you just return the action rather than dispatch it manually.Here is a simple example 
 ```js
 export const SOME_FETCH = {
     type   : 'SOME_FETCH',
-    asyn   : async function(/*{some optional payload pass here}*/){
+    asyn   : async function(/*{some optional payload pass here including dispatch,now you do not need dispatch anymore}*/){
         try{
             let response = await fetch('/')
             let text = await response.text()
