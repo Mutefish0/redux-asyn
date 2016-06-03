@@ -9,7 +9,7 @@ export default function asynMiddleware(){
         if(asyn) 
             {
               let promise = asyn({ dispatch : next, ...param })
-              if(promise instanceof Promise) promise.then((nextAction)=>{
+              if(typeof(promise.then)==='function') promise.then((nextAction)=>{
                     next(nextAction)
                     return nextAction 
                 })
