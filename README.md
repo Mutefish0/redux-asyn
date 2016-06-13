@@ -99,6 +99,39 @@ export const SOME_FETCH_FAILED = {
     type   : 'SOME_FETCH_FAILED'
 }
 ```
+##Action Chain
+`asyn` can be just another action,which will be dispatched after the asyn action dispatched
+we can change the code above
+```js
+export const SOME_FETCH = {
+    type   : 'SOME_FETCH',
+    asyn   : async function(/*{now you don't need `dispatch` anymore}*/){
+        try{
+            let response = await fetch('/')
+            let text = await response.text()
+            console.log(text)
+            return SOME_FETCH_SUCCESS
+        }
+        catch(e){
+            console.log(e.message)
+            return SOME_FETCH_FAILED
+        }
+    }
+}
 
+export const SOME_FETCH_SUCCESS = {
+    type   : 'SOME_FETCH_SUCCESS'
+    asyn   : DO_SOMETHING_INTERSTING
+}
+
+export const SOME_FETCH_FAILED = {
+    type   : 'SOME_FETCH_FAILED'
+}
+
+export const DO_SOMETHING_INTERESTING = {
+    type  : 'DO_SOMETHING_INTERESTING'
+}
+```
+`DO_SOMETHING_INTERESTING` will be dispatched after `SOME_FETCH_SUCCESS` was dispatched
 
 That's all! 
