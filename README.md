@@ -100,8 +100,7 @@ export const SOME_FETCH_FAILED = {
 }
 ```
 ##Action Chain
-`asyn` can be just another action,which will be dispatched after the asyn action dispatched
-we can change the code above
+`asyn` can be just another action,which will be dispatched after the asyn action dispatched,we can change the code above
 ```js
 export const SOME_FETCH = {
     type   : 'SOME_FETCH',
