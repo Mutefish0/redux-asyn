@@ -35,7 +35,8 @@
     "react",
     "redux-asyn",
     "action",
-    "middleware"
+    "middleware",
+    "asynchronous action"
   ],
   "author": "mutefish0",
   "license": "MIT",
