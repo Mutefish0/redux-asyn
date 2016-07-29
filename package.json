@@ -1,6 +1,6 @@
 {
   "name": "redux-asyn",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "babel": {
     "plugins": [
       "transform-class-properties",

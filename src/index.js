@@ -20,7 +20,8 @@ export default function asynMiddleware(){
                               if(typeof(result)==='object'&&result.type) newDispatch(result)
                               //if result is a Promise...
                               else if(typeof(result.then)==='function') result.then((nextAction)=>{
-                                  newDispatch(nextAction)
+                                  if(nextAction!==undefined)
+                                      newDispatch(nextAction)
                                   return nextAction
                               })
                           }
